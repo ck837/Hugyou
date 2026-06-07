@@ -76,6 +76,14 @@ FLUX schnell 4-bit：
 python .\scripts\generate_image.py --profile flux-schnell-4bit --steps 4 --width 768 --height 768
 ```
 
+## 在其他电脑 / Codex 中运行
+
+如果你在另一台电脑或另一个 Codex 工作区 clone 本项目，直接按下面文档执行：
+
+[docs/CODEX_RUNBOOK.md](docs/CODEX_RUNBOOK.md)
+
+注意：模型权重不会提交到 GitHub。第一次运行会自动从 Hugging Face 下载 `segmind/SSD-1B` 到本地 `models/`，之后会复用缓存。
+
 输出文件会保存到：
 
 ```text
@@ -110,4 +118,3 @@ models/
 ├── .gitignore
 └── README.md
 ```
-
